@@ -17,12 +17,11 @@ To get accurate diagnostics, it helps to:
 1. Have the build system of the C/C++ project generate a
    [`compile_commands.json`](https://clang.llvm.org/docs/JSONCompilationDatabase.html)
    file.
-2. Point Clangd to the build directory containing said
-   `compile_commands.json`.
+2. Point Clangd to the build directory containing said `compile_commands.json`.
 3. Set path to Clangd executable.
 4. Set arguments to pass to clangd when starting the language server.
 
-\#2 can be done using the `cpp.buildConfigurations` preference.  In your home
+\#2 can be done using the `cpp.buildConfigurations` preference. In your home
 or your project `.theia/settings.json`, define one or more build
 configurations:
 
@@ -40,19 +39,20 @@ You can then select an active configuration using the
 `C/C++: Change Build Configuration` command from the command palette.
 
 \#3 can be done either by:
-    - Set `CPP_CLANGD_COMMAND` environment variable
-    - Add `cpp.clangdExecutable` preference in your home or your project
-    `.theia/settings.json`:
+
+- Set `CPP_CLANGD_COMMAND` environment variable
+- Add `cpp.clangdExecutable` preference in your home or your project `.theia/settings.json`:
 
     {
         "cpp.clangdExecutable": "/path/to/my/clangd/executable"
     }
-    - Add clangd to system path. Default value of Clangd executable is set to `clangd`
+
+- Add clangd to system path. Default value of Clangd executable is set to `clangd`
 
 \#4 can be done either by:
-    - Set `CPP_CLANGD_ARGS` environment variable
-    - Add `cpp.clangdArgs` preference in your home or your project
-    `.theia/settings.json`:
+
+- Set `CPP_CLANGD_ARGS` environment variable
+- Add `cpp.clangdArgs` preference in your home or your project `.theia/settings.json`:
 
     {
         "cpp.clangdArgs": "list of clangd arguments"
