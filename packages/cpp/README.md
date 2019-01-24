@@ -40,23 +40,23 @@ You can then select an active configuration using the
 
 \#3 can be done either by:
 
-- Set `CPP_CLANGD_COMMAND` environment variable
-- Add `cpp.clangdExecutable` preference in your home or your project `.theia/settings.json`:
+- Setting `CPP_CLANGD_COMMAND` environment variable
+- Adding `cpp.clangdExecutable` preference in your home or your project `.theia/settings.json`:
 
-    {
-        "cpp.clangdExecutable": "/path/to/my/clangd/executable"
-    }
+        {
+            "cpp.clangdExecutable": "/path/to/my/clangd/executable"
+        }
 
-- Add clangd to system path. Default value of Clangd executable is set to `clangd`
+- Adding clangd to system path. Default value of executable path is set to `clangd`
 
 \#4 can be done either by:
 
-- Set `CPP_CLANGD_ARGS` environment variable
-- Add `cpp.clangdArgs` preference in your home or your project `.theia/settings.json`:
+- Setting `CPP_CLANGD_ARGS` environment variable
+- Adding `cpp.clangdArgs` preference in your home or your project `.theia/settings.json`:
 
-    {
-        "cpp.clangdArgs": "list of clangd arguments"
-    }
+        {
+            "cpp.clangdArgs": "list of clangd arguments"
+        }
 
 ## License
 - [Eclipse Public License 2.0](http://www.eclipse.org/legal/epl-2.0/)
